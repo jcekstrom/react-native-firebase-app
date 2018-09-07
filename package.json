@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "postinstall": "react-native-schemes-manager all",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
@@ -20,9 +21,19 @@
     "babel-preset-react-native": "^5",
     "jest": "23.5.0",
     "react-native-rename": "^2.2.2",
+    "react-native-schemes-manager": "^1.0.5",
     "react-test-renderer": "16.4.1"
   },
   "jest": {
     "preset": "react-native"
+  },
+  "xcodeSchemes": {
+    "Debug": [
+      "Dev.Debug"
+    ],
+    "Release": [
+      "Dev.Release"
+    ],
+    "projectDirectory": "ios"
   }
 }
